@@ -2,7 +2,7 @@ steps:
 
 - id: 'Instalando GO ...'
   name: 'gcr.io/cloud-builders/go'
-  args: ['install', 'sum']
+  args: ['install', 'app']
   env: ['GOPATH=.']
 
 - id: 'Executando teste ...'
