@@ -1,7 +1,7 @@
 FROM golang:1.12 as builder
 
 WORKDIR $GOPATH/src/app
-COPY ./src/soma .
+COPY ./src/app .
 RUN go get -d -v
 RUN go build -o /go/bin/app -ldflags "-s -w"
 
